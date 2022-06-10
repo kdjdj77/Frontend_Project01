@@ -1,0 +1,113 @@
+@font-face {
+  src: url("../font/Nanum_Gothic/NanumGothic-Bold.ttf");
+  src: url("../font/Nanum_Gothic/NanumGothic-ExtraBold.ttf");
+  src: url("../font/Nanum_Gothic/NanumGothic-Regular.ttf");
+  font-family: "Nanum_Gothic";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Nanum_Gothic";
+}
+
+#wrap {
+  position: relative;
+  padding-top: 50px;
+}
+
+body {
+  background: url(../img/svis-bg.jpg) repeat;
+}
+
+p {
+  letter-spacing: -1.5px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.inner {
+  position: relative;
+  max-width: 1440px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+/*Common Style*/
+
+.cm_page_button {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.cm_page_button a {
+  display: block;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  border-radius: 30px;
+}
+
+.page1_button:hover > a,
+.page2_button:hover > a {
+  color: red;
+}
+
+.cm_page_button:hover {
+  background-color: #ffb319;
+}
+
+.cm_content_box {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+.cm_imgbox {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+.cm_content_title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 21px;
+  margin-bottom: 30px;
+}
+
+#title_icon {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  transform: translatey(3px);
+}
+
+.cm_content_title_ip {
+  color: #ff5454;
+}
+
+.cm_content_text {
+  color: #ffffff;
+  line-height: 24px;
+  font-size: 17px;
+}
+
+.cm_content_text_ip {
+  color: #ffb9b9;
+}
+
+.cm_content_text_box {
+  display: inline-block;
+}
