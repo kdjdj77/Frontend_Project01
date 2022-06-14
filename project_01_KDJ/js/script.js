@@ -7,7 +7,8 @@ var onpage_on = true;
 var isScroll = false;
 
 $(document).ready(
-	function() {
+	function() 
+	{
 		init();
 		// Scroll Event
 		$('body').on('scroll touchmove mousewheel', 
@@ -62,17 +63,18 @@ $(document).ready(
 $( window ).resize(
 	function() 
 	{
-	// 반응형
-	setHeight();
+		// 반응형
+		setHeight();
 	}
 );
-function init()
+function init() 
 {
 	setHeight();
 	total_section = $('#onepage > section').length;
 	last_y = page_h * total_section;
 }	
-function setHeight(){
+function setHeight()
+{
 	// 높이 설정
 	screen_h = document.body.clientHeight;
 	page_h = screen_h;
