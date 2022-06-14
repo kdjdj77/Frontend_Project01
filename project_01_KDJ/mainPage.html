@@ -8,8 +8,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="./js/script.js"></script>
 	<header>
 		<nav>
 			<input id="sidebar" type="checkbox"/>
@@ -43,7 +41,7 @@
 			</div>
 			<div class="logo">
 				<a href="./mainPage.html">
-					<img src="./img/header/logo.png"/>
+					<img src="./img/header/logo.png" height="40px"/>
 				</a>
 			</div>
 			<li>
@@ -81,18 +79,18 @@
 			</li>
 			<div class="sns">
 				<a href="https://www.instagram.com/sushiro_korea/">
-					<img src="./img/header/instagram.png" width="45px"/>
+					<img src="./img/header/instagram.png" width="35px"/>
 				</a>
 				<a href="https://www.facebook.com/sushiro.kr">
-					<img src="./img/header/facebook.png" width="45px"/>
+					<img src="./img/header/facebook.png" width="35px"/>
 				</a>
 				<a href="https://www.youtube.com/watch?v=PHeXvX-R2pA&feature=youtu.be">
-					<img src="./img/header/youtube.png" width="45px"/>
+					<img src="./img/header/youtube.png" width="35px"/>
 				</a>
 			</div>
 			<div class="logo2">
 				<a href="./mainPage.html">
-					<img src="./img/header/logo2.png" height="40px"/>
+					<img src="./img/header/logo2.png" height="30px"/>
 				</a>
 			</div>
 		</nav>
@@ -359,9 +357,11 @@
 		<section class="s6">
 			<div id="footerTop">
 				<div id="footerTopBlock"><a href="#">브랜드스토리</a></div>
-				<div id="footerTopBlock"><a href="#">이달의 한정메뉴</a></div>
+				<div id="footerTopBlock" class="footerMedia1"><a href="#">이달의 한정메뉴</a></div>
+				<div id="footerTopBlock" class="footerMedia2"><a href="#">한정메뉴</a></div>
 				<div id="footerTopBlock"><a href="#">그랜드메뉴</a></div>
-				<div id="footerTopBlock"><a href="#">테이크아웃ㆍ배달</a></div>
+				<div id="footerTopBlock" class="footerMedia1"><a href="#">테이크아웃ㆍ배달</a></div>
+				<div id="footerTopBlock" class="footerMedia2"><a href="#">주문ㆍ배달</a></div>
 			</div>
 			<div id="footerBottom">
 				<div id="footerBottomBlock">
@@ -384,19 +384,21 @@
 			</div>
 			<div id="footerFooter">
 				<div id="footerEx">
-					대표이사: 최장규</br>
-					사업자 등록번호: 214-88-75700</br>
-					본사. 서울시 마포구 새창로 11, 공덕빌딩18층</br>
-					TEL. 1544-1544</br>
-					FAX. 070-1533-1533</br>
+					<b>
+						</br>대표이사: 최장규</br>
+						사업자 등록번호: 214-88-75700</br>
+						본사. 서울시 마포구 새창로 11, 공덕빌딩18층</br>
+						TEL. 1544-1544</br>
+						FAX. 070-1533-1533</br>
+					</b>
 				</div>
 				<div id="footerLogo">
 					</br>
 					<div id="footerLogoImg">
-						<img src="./img/header/logo2.png" height="40rem"/>
+						<img src="./img/header/logo2.png" height="50rem"/>
 					</div>
-					</br>창업문의 1588-1588</br>
-					<div style="font-size:0.5rem">COPYRIGHT ⓒ 2021 SUSHIRO ALL RIGHTS RESERVED</div>
+					<div id="enter"></br></div>창업문의 <span id="phone">1588-1588</span></br>
+					<div style="font-size:1rem">COPYRIGHT ⓒ 2021 SUSHIRO ALL RIGHTS RESERVED</div>
 					</br>
 					<div id="footerSns">
 						<img src="./img/header/insta.png"/> &nbsp
@@ -407,4 +409,6 @@
 			</div>
 		</section>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
 </body>
