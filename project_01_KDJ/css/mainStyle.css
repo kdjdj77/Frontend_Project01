@@ -2,11 +2,13 @@ body, html {
    padding:0;
    margin:0;
    font-family: 'Nanum Gothic Coding', monospace;
+   font-size:12px;
 }
 body::-webkit-scrollbar {
    display:none;
 }
 section {
+   height:100vh;
    position:absolute;
    box-sizing:border-box;
    color:#fff;
@@ -37,11 +39,11 @@ section {
    position:relative;
 }
 .slider{
-   max-height:100%;
+   max-height:calc(100vh - 60px);
    height:auto;
    width:100%;
    position:relative;
-   margin:0 auto;
+   margin-top:60px;
    overflow:hidden;
 }
 .slider input[type=radio]{
@@ -61,10 +63,30 @@ ul.imgs li{
    padding:0;
    margin:0;
 }
-.s2SliderImg1 {background:url("../img/section2/slider_1.jpg")left center no-repeat;height:100%;width:auto;}
-.s2SliderImg2 {background:url("../img/section2/slider_2.jpg")left center no-repeat;height:100%;width:auto;}
-.s2SliderImg3 {background:url("../img/section2/slider_3.jpg")left center no-repeat;height:100%;width:auto;}
-.s2SliderImg4 {background:url("../img/section2/slider_4.jpg")center center no-repeat;height:100%;width:auto;}
+.s2SliderImg1 {
+   background:url("../img/section2/slider_1.jpg")left center no-repeat;
+   height:calc(100vh - 60px);
+   width:auto;
+   background-size:100%;
+}
+.s2SliderImg2 {
+   background:url("../img/section2/slider_2.jpg")left center no-repeat;
+   height:calc(100vh - 60px);
+   width:auto;
+   background-size:100%;
+}
+.s2SliderImg3 {
+   background:url("../img/section2/slider_3.jpg")left center no-repeat;
+   height:calc(100vh - 60px);
+   width:auto;
+   background-size:100%;
+}
+.s2SliderImg4 {
+   background:url("../img/section2/slider_4.jpg")center center no-repeat;
+   height:calc(100vh - 60px);
+   width:auto;
+   background-size:100%;
+}
 #im {
    position:absolute;
    top:0px;
@@ -368,9 +390,15 @@ ul.imgs li{
    padding-top:100px; 
    height:5%; 
    width:100%; 
-   background-color:red;
+   background-color:#f47c7c;
    display:flex;
    justify-content:space-between;
+}
+.s6 #footerTop .footerMedia1 {
+   display:block;
+}
+.s6 #footerTop .footerMedia2 {
+   display:none;
 }
 .s6 #footerTop #footerTopBlock {
    height:100%;
@@ -386,7 +414,7 @@ ul.imgs li{
    padding-top:1%;
    height:70%;
    width:100%;
-   background-color:blue;
+   background-color:#ef9f9f;
    display:flex;
    justify-content:space-between;
 }
@@ -394,7 +422,7 @@ ul.imgs li{
    height:100%;
    width:20%;
    color:black;
-   line-height: 3rem;
+   line-height: 4rem;
 }
 .s6 #footerBottom #footerBottomBlock a {
    text-decoration:none;
@@ -404,28 +432,31 @@ ul.imgs li{
    position:absolute;
    width:100%;
    height:40%;
-   background-color:green;
+   background-color:#fad4d4;
    bottom:0;
    display:flex;
    justify-content:space-around;
 }
 #footerFooter #footerEx {
-   padding-left:2%;
+   padding-left:5%;
    width:50%;
    height:100%;
    line-height:3rem;
    text-align:left;
    word-break:keep-all;
-   background-color:aqua;
+   background-color:#8cc0de;
    color:black;
 }
 #footerFooter #footerLogo {
    width:50%;
    height:100%;
-   background-color:purple;
+   background-color:#8cc0de;
+   font-size:3rem;
+   color:black;
 }
+#footerLogo #phone {white-space:nowrap;}
+#footerLogo #enter {display:block;} 
 #footerLogo #footerSns {
-   padding-top:2%;
    display:flex;
    justify-content:right;
    width:100%;
@@ -433,7 +464,7 @@ ul.imgs li{
 }
 #footerLogo #footerLogoImg {
    width:100%;
-   height:20%;
+   height:15%;
 }
 #footerLogoImg img {
    right:0;
@@ -475,7 +506,15 @@ ul.imgs li{
    .s5Title {width:90%;}
    #fadeSlide img {display:none;}
 /*section6--------------------------------------------------------------------------------*/
-   
+   #footerLogo #enter {
+      display:none;
+   }   
+   .s6 #footerTop .footerMedia1 {
+      display:none;
+   }
+   .s6 #footerTop .footerMedia2 {
+      display:block;
+   }
 }
 
 @media screen and (min-width:787px) and (max-width:1080px) {
@@ -510,5 +549,13 @@ ul.imgs li{
    .s5Title {width:80%;}
    #fadeSlide img {width:5%; visibility:hidden; display:block;}
 /*section6--------------------------------------------------------------------------------*/
-      
+   #footerLogo #enter {
+      display:none;
+   }  
+   .s6 #footerTop .footerMedia1 {
+      display:none;
+   }
+   .s6 #footerTop .footerMedia2 {
+      display:block;
+   }  
 }
