@@ -93,14 +93,15 @@
   height: 600px;
   background-color: #000;
 }
+
 #menubox2,
 #menubox3,
 #menubox4 {
   display: none;
 }
-#event2,
-#event3,
-#event4 {
+#eventbox2,
+#eventbox3,
+#eventbox4 {
   display: none;
 }
 
