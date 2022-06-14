@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/takeoutstyle.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link
+      rel="stylesheet"
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+    />
+    <link
+      href="https://sushiro.co.kr/theme/basic/images/m-logo1.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/0852d9f842.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>스시로</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- relative -->
+      <header id="header">
+        <div class="inner">
+          <h1><a href="#" id="header_logo1">Logo</a></h1>
+          <h2><a href="#" id="header_logo2">Logo2</a></h2>
+          <h3><a href="#" id="menu_icon">menu</a></h3>
+          <!-- 클릭하면 메뉴 나오도록 하고싶었지만 실패..
+              <div id="side_menu">
+                <h1>브랜드스토리</h1>
+                <ul class="side_menu1 side_menu">
+                  <li><a href="#">스시로 소개</a></li>
+                  <li><a href="#">스시로 연혁</a></li>
+                </ul>
+                <h1>이달의 한정메뉴</h1>
+                <ul class="side_menu2 side_menu">
+                  <li><a href="#">초밥</a></li>
+                  <li><a href="#">사이드</a></li>
+                  <li><a href="#">디저트</a></li>
+                </ul>
+                <h1>그 랜 드 메 뉴</h1>
+                <ul class="side_menu3 side_menu">
+                  <li><a href="#">초밥</a></li>
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">사이드</a></li>
+                  <li><a href="#">디저트</a></li>
+                </ul>
+                <h1>테이크아웃·배달</h1>
+                <ul class="side_menu4 side_menu">
+                  <li><a href="#">가까운 매장 찾기</a></li>
+                </ul>
+              </div>
+              -->
+          <div id="nav_box">
+            <ul id="nav">
+              <li><a href="./brandstory_page1.html">브랜드스토리</a></li>
+              <li><a href="#">이달의 한정메뉴</a></li>
+              <li><a href="#">그 랜 드 메 뉴</a></li>
+              <li><a href="#">테이크아웃·배달</a></li>
+            </ul>
+            <div class="nav_hover">
+              <ul id="nav_hover_menu1" class="nav_hover_menu">
+                <li>
+                  <a href="./brandstory_page1.html" class="nav_hover_link"
+                    >스시로 소개</a
+                  >
+                </li>
+                <li>
+                  <a href="./brandstory_page2.html" class="nav_hover_link"
+                    >스시로 연혁</a
+                  >
+                </li>
+              </ul>
+              <ul id="nav_hover_menu2" class="nav_hover_menu">
+                <li><a href="#" class="nav_hover_link">초밥</a></li>
+                <li><a href="#" class="nav_hover_link">사이드</a></li>
+                <li><a href="#" class="nav_hover_link">디저트</a></li>
+              </ul>
+              <ul id="nav_hover_menu3" class="nav_hover_menu">
+                <li><a href="#" class="nav_hover_link">초밥</a></li>
+                <li><a href="#" class="nav_hover_link">음료</a></li>
+                <li><a href="#" class="nav_hover_link">사이드</a></li>
+                <li><a href="#" class="nav_hover_link">디저트</a></li>
+              </ul>
+              <ul id="nav_hover_menu4" class="nav_hover_menu">
+                <li><a href="#" class="nav_hover_link">가까운 매장 찾기</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="sns_nav_box">
+            <ul id="sns_nav">
+              <li><a href="#" id="header_sns_insta" alt="insta">insta</a></li>
+              <li><a href="#" id="header_sns_facebook">facebook</a></li>
+              <li><a href="#" id="header_sns_youtube">youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="events" id="eventbox1">
+        <p></p>
+        <br /><br />
+        <p id="grandmenu_title">테이크아웃·배달</p>
+        <hr class="grandmenu_yellowhr" />
+        <p id="grandmenu_subtitle">맛있는 스시를 간편하게</p>
+        <hr class="grandmenu_yellowhr" />
+        <div id="button_wrapper">
+          <div class="inner_button">
+            <a href="javascript:event1()" class="inner_button buttonimg">
+              <img src="./img/takeout_img/bento.jpg" />
+            </a>
+            <hr class="button_hr" />
+            <a href="javascript:event1()" class="button_text button_active"
+              >도시락</a
+            >
+            <hr class="button_hr" />
+          </div>
+          <div class="inner_button">
+            <a href="javascript:event2()" class="inner_button buttonimg">
+              <img src="./img/takeout_img/overrice.png" />
+            </a>
+            <hr class="button_hr" />
+            <a href="javascript:event2()" class="button_text">덮밥류</a>
+            <hr class="button_hr" />
+          </div>
+        </div>
+        <hr class="grandmenu_whitehr" />
+        <div id="grandmenu_box">
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1.jpg" class="sushi_img" />
+            <span class="sushi_name">연어모아 Set</span><br />
+            <span class="sushi_price">10900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (1).jpg" class="sushi_img" />
+            <span class="sushi_name">스시로 셋트</span><br />
+            <span class="sushi_price">12900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (2).jpg" class="sushi_img" />
+            <span class="sushi_name">참다랑어 프리미엄 셋트</span><br />
+            <span class="sushi_price">19900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (3).jpg" class="sushi_img" />
+            <span class="sushi_name">스시로 키즈 셋트</span><br />
+            <span class="sushi_price">8900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (4).jpg" class="sushi_img" />
+            <span class="sushi_name">스시로 갓성비 셋트</span><br />
+            <span class="sushi_price">9900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (5).jpg" class="sushi_img" />
+            <span class="sushi_name">스시로 밸류 셋트</span><br />
+            <span class="sushi_price">13900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (6).jpg" class="sushi_img" />
+            <span class="sushi_name">새우 모아 셋트</span><br />
+            <span class="sushi_price">12900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (7).jpg" class="sushi_img" />
+            <span class="sushi_name">5피스 새우 모듈</span><br />
+            <span class="sushi_price">7900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (8).jpg" class="sushi_img" />
+            <span class="sushi_name">5피스 연어 모듈</span><br />
+            <span class="sushi_price">4900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dosirak1 (9).jpg" class="sushi_img" />
+            <span class="sushi_name">5피스 고기 모듈</span><br />
+            <span class="sushi_price">5900</span>원
+          </div>
+        </div>
+        <hr class="grandmenu_whitehr" />
+      </div>
+      <div class="events" id="eventbox2">
+        <p></p>
+        <br /><br />
+        <p id="grandmenu_title">테이크아웃·배달</p>
+        <hr class="grandmenu_yellowhr" />
+        <p id="grandmenu_subtitle">맛있는 스시를 간편하게</p>
+        <hr class="grandmenu_yellowhr" />
+        <div id="button_wrapper">
+          <div class="inner_button">
+            <a href="javascript:event1()" class="inner_button buttonimg">
+              <img src="./img/takeout_img/bento.jpg" />
+            </a>
+            <hr class="button_hr" />
+            <a href="javascript:event1()" class="button_text">도시락</a>
+            <hr class="button_hr" />
+          </div>
+          <div class="inner_button">
+            <a href="javascript:event2()" class="inner_button buttonimg">
+              <img src="./img/takeout_img/overrice.png" />
+            </a>
+            <hr class="button_hr" />
+            <a href="javascript:event2()" class="button_text button_active"
+              >덮밥류</a
+            >
+            <hr class="button_hr" />
+          </div>
+        </div>
+        <hr class="grandmenu_whitehr" />
+        <div id="grandmenu_box">
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dupbap1.png" class="sushi_img" />
+            <span class="sushi_name">장어 덮밥 특대</span><br />
+            <span class="sushi_price">12900</span>원
+          </div>
+          <div class="sushi_menubox">
+            <img src="./img/takeout_img/dupbap1 (1).png" class="sushi_img" />
+            <span class="sushi_name">장어 덮밥</span><br />
+            <span class="sushi_price">8900</span>원
+          </div>
+        </div>
+        <hr class="grandmenu_whitehr" />
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="head">
+        <div class="foot_head_inner">
+          <ul class="fnb">
+            <li><a href="/sushiro_brandstory.html">브랜드스토리</a></li>
+            <li><a href="/sushiro_seasonmenu.html">이달의 한정메뉴</a></li>
+            <li>
+              <a href="./sushiro_grandmenu/sushiro_grandmenu.html"
+                >그랜드메뉴</a
+              >
+            </li>
+            <li><a href="/sushiro_takeout.html">테이크아웃·배달안내</a></li>
+            <li><a href="/sushiro_recruit.html">채용안내</a></li>
+          </ul>
+        </div>
+        <div class="foot_head_inner">
+          <ul class="foot_sns">
+            <li class="instagram">
+              <a
+                href="https://www.instagram.com/sushiro_korea/"
+                target="_blank;"
+                ><i class="fa-brands fa-instagram" style="z-index: 20"></i
+              ></a>
+            </li>
+            <li class="facebook">
+              <a href="https://www.facebook.com/sushiro.kr" target="_blank;"
+                ><i class="fa-brands fa-facebook" style="z-index: 20"></i
+              ></a>
+            </li>
+            <li class="youtube">
+              <a
+                href="https://youtube.com/channel/UCe5SBVy0UF_81Uu-HU5qZrg"
+                target="_blank;"
+                ><i class="fa-brands fa-youtube" style="z-index: 20"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="foot">
+        <div class="foot_foot_inner">
+          <ul class="store_info">
+            <li>대표이사: 최장규</li>
+            <li>사업자 등록번호: 214-88-75700</li>
+            <li>본사. 서울시 마포구 새창로 11, 공덕빌딩18층</li>
+            <li>TEL. 1544-1544</li>
+            <li>FAX. 070-1533-1533</li>
+          </ul>
+          <h1 class="foot_logo">
+            <a href="/sushiro_mainpage.html">스시로</a>
+          </h1>
+          <b>창업문의 1588-1588</b>
+          <p>COPYRIGHT ⓒ 2021 SUSHIRO ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const eventbox1 = document.getElementById("eventbox1");
+    const eventbox2 = document.getElementById("eventbox2");
+    function event1() {
+      eventbox1.style.display = "block";
+      eventbox2.style.display = "none";
+    }
+    function event2() {
+      eventbox1.style.display = "none";
+      eventbox2.style.display = "block";
+    }
+  </script>
+</html>
