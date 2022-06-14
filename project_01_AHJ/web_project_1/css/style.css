@@ -204,7 +204,7 @@ footer hr {
   color: #000000;
 }
 
-#events {
+.events {
   height: 1500px;
   background-color: #000;
   width: 100%;
