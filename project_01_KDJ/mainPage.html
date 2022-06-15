@@ -6,6 +6,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 	<header>
@@ -126,7 +128,7 @@
 <!--section 03-------------------------------------------------------------------------------------------->
 		<section class="s3">
 			<div class="filter"></div>
-			<div class="s3Name">
+			<div class="s3Name" data-aos="fade-down">
 				<!--
 				<img src="./img/header/logo2.png" style="height:40%;"/>
 				-->
@@ -137,11 +139,10 @@
 					 메뉴 소개
 				</b>
 				<div style="font-size:1rem;">
-					<br/>
 					맛있는 스시를 배부르게, 맛있는 스시로 마음도 행복하게
 				</div>
 			</div>
-			<div class="s3Food1 s3f">
+			<div class="s3Food1 s3f" data-aos="fade-up">
 				<a  href="https://sushiro.co.kr/bbs/board.php?bo_table=menu
 				&sca=&sca0=sushi&sca1=&sop=and&sfl=wr_subject&stx="class="s3Cover">
 				<br><br>초밥
@@ -155,7 +156,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="s3Food2 s3f">
+			<div class="s3Food2 s3f" data-aos="fade-up">
 				<a href="https://sushiro.co.kr/bbs/board.php?bo_table=menu
 				&sca=&sca0=side&sca1=&sop=and&sfl=wr_subject&stx=" class="s3Cover"><br><br>
 				사이드
@@ -164,7 +165,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="s3Food3 s3f">
+			<div class="s3Food3 s3f" data-aos="fade-up">
 				<a href="https://sushiro.co.kr/bbs/board.php?bo_table=menu
 				&sca=&sca0=dessert&sca1=&sop=and&sfl=wr_subject&stx="class="s3Cover"><br><br>
 				디저트
@@ -173,7 +174,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="s3Food4 s3f">
+			<div class="s3Food4 s3f" data-aos="fade-up">
 				<a href="https://sushiro.co.kr/bbs/board.php?bo_table=menu
 				&sca=&sca0=drink&sca1=&sop=and&sfl=wr_subject&stx="class="s3Cover"><br><br>
 				음료
@@ -245,7 +246,7 @@
 					<div class="mSearch">
 						</br>
 						가장 가까운 스시로 </br>
-						<b>매장을 검색해 보세요</b>
+						<b>매장을 검색해 보세요</br></b>
 						<input type="text" class="mSearchInput"></input>
 						<button type="button" class="mSearchButton" onclick="window.location.href='https://sushiro.co.kr/page/store.php'">
 							검색하기
@@ -356,7 +357,8 @@
 		</section>
 		<section class="s6">
 			<div id="footerTop">
-				<div id="footerTopBlock"><a href="#">브랜드스토리</a></div>
+				<div id="footerTopBlock" class="footerMedia1"><a href="#">브랜드스토리</a></div>
+				<div id="footerTopBlock" class="footerMedia2"><a href="#">브랜드</a></div>
 				<div id="footerTopBlock" class="footerMedia1"><a href="#">이달의 한정메뉴</a></div>
 				<div id="footerTopBlock" class="footerMedia2"><a href="#">한정메뉴</a></div>
 				<div id="footerTopBlock"><a href="#">그랜드메뉴</a></div>
@@ -395,7 +397,7 @@
 				<div id="footerLogo">
 					</br>
 					<div id="footerLogoImg">
-						<img src="./img/header/logo2.png" height="50rem"/>
+						<img src="./img/header/logo2.png" height="40rem"/>
 					</div>
 					<div id="enter"></br></div>창업문의 <span id="phone">1588-1588</span></br>
 					<div style="font-size:1rem">COPYRIGHT ⓒ 2021 SUSHIRO ALL RIGHTS RESERVED</div>
@@ -411,4 +413,7 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="./js/script.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
