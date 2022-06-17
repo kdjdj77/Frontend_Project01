@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 700;
+  src: local("Spoqa Han Sans Neo Bold"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  src: local("Spoqa Han Sans Neo Medium"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  src: local("Spoqa Han Sans Neo Regular"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 300;
+  src: local("Spoqa Han Sans Neo Light"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.ttf")
+      format("truetype");
+}
+
+html {
+  font-size: 14px;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  color: #666;
+  -webkit-text-size-adjust: none;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  word-spacing: -0.025em;
+  word-break: keep-all;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 17px;
+  font-family: "Spoqa Han Sans Neo";
+}
+
+.active a {
+  color: #d02228;
+}
+
+#wrapper {
+  padding-top: 79px;
+  margin-bottom: 0px;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+}
+
+.foot_sns {
+  position: absolute;
+  right: 210px;
+  bottom: 264px;
+}
+
+.foot_sns > li {
+  display: inline-block;
+  position: relative;
+  width: 37px;
+  height: 37px;
+  top: 7px;
+  margin: -3px 7px;
+  background-color: #d02228;
+  border-radius: 50%;
+}
+
+.foot_sns > li > a {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+
+footer {
+  height: 300px;
+  position: relative;
+  background-color: #ffb72b;
+  border: 2px solid #000;
+}
+
+.foot_head_inner {
+  width: 100%;
+  display: inline-block;
+}
+
+.fnb {
+  margin-left: 20px;
+}
+
+.fnb li {
+  float: left;
+  margin: 5px;
+  margin-right: 5%;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.fnb li a {
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fnb li a:hover {
+  color: #d02228;
+}
+
+footer hr {
+  border: 0px;
+  border-top: 5px solid #000;
+  margin-top: -0.5%;
+}
+.foot {
+  margin-top: 10px;
+}
+
+.store_info {
+  position: absolute;
+  right: 58px;
+  bottom: 62px;
+}
+
+.store_info li {
+  margin-bottom: 17px;
+  color: #000;
+}
+
+.foot_logo {
+  position: absolute;
+  right: 197px;
+  bottom: 90px;
+}
+
+.foot_logo > a {
+  display: block;
+  width: 149px;
+  height: 28px;
+  margin: 0 20px;
+  position: absolute;
+  top: 26px;
+  right: 0;
+  text-indent: -9999px;
+  background-image: url(https://sushiro.co.kr/theme/basic/images/head-logo2.png);
+  background-size: 100% 100%;
+}
+
+.foot_foot_inner b {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  width: 188px;
+  height: 28px;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.foot_foot_inner p {
+  position: absolute;
+  right: 94px;
+  bottom: 13px;
+  width: 270px;
+  height: 17px;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.events {
+  height: 1330px;
+  background-color: #000;
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 78px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffb72b;
+  border-bottom: 1px solid #ffb72b;
+}
+
+body {
+  background-color: #000;
+}
+#header_box {
+  min-width: 400px;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 78px;
+  position: relative;
+  z-index: 10;
+}
+
+.fa-brands {
+  color: #ffb72b;
+  font-size: 20px;
+}
+
+.logo > a {
+  display: block;
+  width: 59px;
+  height: 55px;
+  margin: 0 20px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  text-indent: -9999px;
+  background-image: url(https://sushiro.co.kr/theme/basic/images/head-logo1.png);
+  background-size: 100% 100%;
+}
+
+.logo2 > a {
+  display: block;
+  width: 149px;
+  height: 28px;
+  margin: 0 20px;
+  position: absolute;
+  top: 26px;
+  right: 0;
+  text-indent: -9999px;
+  background-image: url(https://sushiro.co.kr/theme/basic/images/head-logo2.png);
+  background-size: 100% 100%;
+}
+
+.menu {
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -9999px;
+  background: url(https://sushiro.co.kr/theme/basic/images/head-mnu.png);
+  background-size: 100% 100%;
+  display: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.nav_menu {
+  display: block;
+  text-align: center;
+  padding-right: 327px;
+  padding-left: 55px;
+}
+
+.ainnav {
+  color: #000;
+}
+
+.ainnav:hover {
+  color: #d02228 !important;
+}
+
+.nav > .nav_menu > li {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.nav > .nav_menu > li ~ li::before {
+  content: "/";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  display: block;
+  left: -7px;
+}
+
+.nav_sns {
+  position: absolute;
+  right: 210px;
+  bottom: 25px;
+}
+
+.nav_sns > li {
+  display: inline-block;
+  position: relative;
+  width: 37px;
+  height: 37px;
+  top: 7px;
+  margin: -3px 7px;
+  background-color: #d02228;
+  border-radius: 50%;
+}
+
+.nav_sns > li > a {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+
+/*@미디어쿼리*/
+
+@media (min-width: 1025px) {
+  .nav_menu > li > a {
+    padding: 0 25px;
+  }
+} /*1025px 이상인 경우에 max는 제한없이 적용*/
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .nav_menu > li > a {
+    padding: 0 12px;
+  }
+} /*1025px < screen <= 1200px 까지만 적용*/
+@media (max-width: 1024px) {
+  #wrapper {
+    padding-top: 50px;
+  }
+
+  #header,
+  #header_box {
+    height: 49px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    width: 69.5px;
+    height: 49px;
+    z-index: 2000;
+  }
+
+  .logo > a {
+    background-image: url(https://sushiro.co.kr/theme/basic/images/m-logo1.png);
+    width: 36px;
+    height: 33.5px;
+    top: 8px;
+  }
+
+  .logo2 > a {
+    background-image: url(https://sushiro.co.kr/theme/basic/images/m-logo2.png);
+    width: 88px;
+    height: 17px;
+    top: 15px;
+    right: 60px;
+  }
+}
