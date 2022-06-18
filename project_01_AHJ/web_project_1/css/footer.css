@@ -1,0 +1,185 @@
+/*footer*/
+
+#footer {
+  width: 100%;
+  background-color: #ffb319;
+}
+
+#footer_head {
+  width: 100%;
+  height: 50px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#footer_head .inner {
+  display: grid;
+  grid-template-columns: 5fr 1fr 2fr;
+  height: 100%;
+}
+
+.footer_nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.footer_sns {
+  display: flex;
+  grid-column: 3;
+  align-items: center;
+}
+
+.footer_nav li {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.footer_nav li:after {
+  content: "|";
+  position: absolute;
+  right: 0;
+}
+
+.footer_nav li:last-child:after {
+  display: none;
+}
+
+.footer_sns li {
+  margin: 0 13px;
+}
+
+.footer_sns li:first-child {
+  margin-left: 0;
+}
+
+.footer_sns li a {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+#footer_sns_instagram {
+  background: url(../레이아웃수정/renew_img/img/foot-sns1.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+
+#footer_sns_facebook {
+  background: url(../레이아웃수정/renew_img/img/foot-sns3.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+
+#footer_sns_youtube {
+  background: url(../레이아웃수정/renew_img/img/youtube_bottom.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+
+#footer_bottom {
+  border-top: 1.5px solid black;
+}
+
+#footer_bottom .inner {
+  display: grid;
+  grid-template-columns: 5fr 1fr 2fr;
+  grid-template-rows: auto auto;
+}
+
+#footer_mini_nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 14px;
+}
+
+#footer_mini_nav ul li a {
+  color: black;
+}
+
+#footer_mini_nav ul li a:hover {
+  color: red;
+}
+
+.footer_mini_nav1,
+.footer_mini_nav2,
+.footer_mini_nav3,
+.footer_mini_nav4 {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: top;
+}
+
+#footer_bottom_text {
+  display: grid;
+  font-size: 12px;
+  grid-column: 3 / span 1;
+  align-items: end;
+  margin-top: 10px;
+}
+
+#footer_bottom_text ul li {
+  line-height: 20px;
+}
+
+#footer_bottom_text ul li:last-child {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 7.5px 0;
+  border-bottom: 2px solid black;
+}
+
+#footer_bottom_end {
+  position: relative;
+  display: grid;
+}
+
+.footer_bottom_logo {
+  display: inline-block;
+  background: url(../레이아웃수정/renew_img/img/head-logo2.png);
+  background-size: 100% 100%;
+  width: 149px;
+  height: 28px;
+}
+
+#footer_bottom_end p {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #footer_head {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #footer_head > .inner,
+  #footer_bottom > .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer_sns {
+    grid-column: 1;
+    justify-content: center;
+  }
+  .footer_nav,
+  #footer_mini_nav {
+    display: none;
+  }
+
+  #footer_bottom_text {
+    display: block;
+    text-align: center;
+    grid-column: 1;
+  }
+
+  .footer_bottom_logo {
+    margin: 0 auto;
+  }
+}

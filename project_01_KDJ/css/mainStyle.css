@@ -39,11 +39,11 @@ section {
    position:relative;
 }
 .slider{
-   max-height:calc(100vh - 60px);
+   max-height:calc(100vh - 50px);
    height:auto;
    width:100%;
    position:relative;
-   margin-top:60px;
+   margin-top:50px;
    overflow:hidden;
 }
 .slider input[type=radio]{
@@ -65,25 +65,25 @@ ul.imgs li{
 }
 .s2SliderImg1 {
    background:url("../img/section2/slider_1.jpg")left center no-repeat;
-   height:calc(100vh - 60px);
+   height:calc(100vh - 50px);
    min-width:180vh;
    background-size:cover;
 }
 .s2SliderImg2 {
    background:url("../img/section2/slider_2.jpg")left center no-repeat;
-   height:calc(100vh - 60px);
+   height:calc(100vh - 50px);
    min-width:180vh;
    background-size:cover;
 }
 .s2SliderImg3 {
    background:url("../img/section2/slider_3.jpg")left center no-repeat;
-   height:calc(100vh - 60px);
+   height:calc(100vh - 50px);
    min-width:180vh;
    background-size:cover;
 }
 .s2SliderImg4 {
    background:url("../img/section2/slider_4.jpg")center center no-repeat;
-   height:calc(100vh - 60px);
+   height:calc(100vh - 50px);
    background-size:cover;
 }
 #im {
@@ -481,25 +481,25 @@ ul.imgs li{
 /*section2--------------------------------------------------------------------------------*/
    .s2SliderImg1 {
       background:url("../img/section2/slider_1_mobile.jpg")left center no-repeat;
-      height:calc(100vh - 60px);
+      height:calc(100vh - 50px);
       min-width:60vh;
       background-size:cover;
    }
    .s2SliderImg2 {
       background:url("../img/section2/slider_2_mobile.jpg")left center no-repeat;
-      height:calc(100vh - 60px);
+      height:calc(100vh - 50px);
       min-width:90vh;
       background-size:cover;
    }
    .s2SliderImg3 {
       background:url("../img/section2/slider_3_mobile.jpg")left center no-repeat;
-      height:calc(100vh - 60px);
+      height:calc(100vh - 50px);
       min-width:60vh;
       background-size:cover;
    }
    .s2SliderImg4 {
       background:url("../img/section2/slider_4_mobile.jpg")center center no-repeat;
-      height:calc(100vh - 60px);
+      height:calc(100vh - 50px);
       min-width:60vh;
       background-size:cover;
    }
