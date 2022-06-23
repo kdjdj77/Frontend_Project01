@@ -53,7 +53,8 @@ nav .thumbnail{
     padding: 0%;
     width: auto;
     height: 440px;
-    margin: 0 auto;
+    margin-left: 400px;
+    margin-right: 400px;
     margin-bottom: 50px; 
     
 }
@@ -64,11 +65,20 @@ nav .thumbnail{
     display: inline-block;
 }
 
+.screen2-right-1{
+    position: absolute; top:30%;
+}
+
+.screen2-right-2{
+    position: absolute; left: 40%
+}
 .screen2-left{
     width: 40%;
-    display: inline-block;
-    
-  
+    display: inline-block; 
+}
+
+.screen2-left-1{
+    position: absolute; top:30%;  left: 10%
 }
 
 div, ul, li{
@@ -196,7 +206,7 @@ div, ul, li{
 }
 
 
-    @media screen and (max-width: 1200px){
+    @media screen and (min-width: 800px)and (max-width: 1200px){
     nav .thumbnail{
         margin-top: 90px;
     }
@@ -211,25 +221,70 @@ div, ul, li{
     }
 
     .screen2{
-        padding: 0%;
-        width: auto;
-        height: 440px;
-        margin-left: 400px;
-        margin-right: 400px;
-        margin-bottom: 50px; 
-        
+        margin:0;
     }
     
     .screen2-right{
-        width: 40%;
-        margin-left: 200px;
-        display: inline-block;
+        margin-left: 100px;
     }
-    
-    .screen2-left{
-        width: 40%;
-        display: inline-block;
-        
-      
+
+    .screen3{
+        margin-left: 20px;
+
     }
 }
+
+    @media screen and (max-width: 799px){
+        nav .thumbnail{
+            margin-top: 90px;
+        }
+        
+        .thumbnail_img{
+            width: 767px;
+            height: 350px;
+        }
+
+        .screen1{
+            margin-left: 20px;
+        }
+
+        .screen3{
+            margin-left: 20px;
+        }
+
+        .screen2{
+            padding: 0%;
+            text-align: center;
+            width: 799px;
+            height: 820px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 30px; 
+            
+        }
+        
+        .screen2-right{
+            width: auto;
+            display: contents;
+            margin-top: 30%;
+            margin-left: 0%;
+        }
+        
+        .screen2-right-1{
+            position: absolute; top:30%;
+        }
+        
+        .screen2-right-2{
+            position: absolute; left: 40%
+        }
+        .screen2-left{
+            width: auto;
+            margin: 0 auto;
+            display: contents;
+        }
+        
+        .screen2-left-1{
+            position: absolute; top:0%;  left: 25%
+        }
+
+    }
