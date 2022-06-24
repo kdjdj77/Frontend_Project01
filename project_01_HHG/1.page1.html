@@ -7,7 +7,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>이달의 한정메뉴</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="../project_01_KYC/brandstory_css/header.css" />
+    <link rel="stylesheet" href="../project_01_KYC/brandstory_css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
@@ -16,42 +18,88 @@
 
 <body>
    
-<header>
-        <div class="logo">
-           <img src="./img/logo.png" />
-               <!--<a href =""></a>-->   
-           </div>
-        <a class="menu">브랜드스토리</a>
-        <a class="menu">/</a>
-        <a class="menu">이달의 한정메뉴</a>
-        <a class="menu">/</a>
-        <a class="menu">그랜드메뉴</a>
-        <a class="menu">/</a>
-        <a class="menu">테이크아웃ㆍ배달</a>
-        <div class="sns">
-            <a href="https://www.instagram.com/sushiro_korea/">
-                <img src="./img/insta.png">
-            </a>
-            <a href="https://www.facebook.com/sushiro.kr">
-            <img src="./img/faceb.png"></a>
-            <a href="https://www.youtube.com/watch?v=PHeXvX-R2pA&feature=youtu.be">
-            <img src="./img/youtu.png"><a href="https://youtu.be/PHeXvX-R2pA"></a>
+    <header id="header">
+        <div class="inner">
+          <h1><a href="../project_01_KDJ/mainPage.html" id="header_logo1">Logo</a></h1>
+          <h2><a href="../project_01_KDJ/mainPage.html" id="header_logo2">Logo2</a></h2>
+          <h3><button id="menu_icon" onclick="open_sidebar()">menu</button></h3>
+          <div id="side_menu">
+            <a href="#" style="color: white; font-size: 24px; font-weight: bold" onclick="close_sidebar()">X</a>
+            <h1>브랜드스토리</h1>
+            <ul class="side_menu1 side_menu">
+              <li><a href="../project_01_KYC/brandstory_page1.html">스시로 소개</a></li>
+              <li><a href="../project_01_KYC/brandstory_page2.html">스시로 연혁</a></li>
+            </ul>
+            <h1>이달의 한정메뉴</h1>
+            <ul class="side_menu2 side_menu">
+              <li><a href="./1.page1.html">초밥</a></li>
+              <li><a href="./1.page1.html">사이드</a></li>
+              <li><a href="./1.page1.html">디저트</a></li>
+            </ul>
+            <h1>그 랜 드 메 뉴</h1>
+            <ul class="side_menu3 side_menu">
+              <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">초밥</a></li>
+              <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">음료</a></li>
+              <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">사이드</a></li>
+              <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">디저트</a></li>
+            </ul>
+            <h1>테이크아웃·배달</h1>
+            <ul class="side_menu4 side_menu">
+              <li><a href="#">가까운 매장 찾기</a></li>
+            </ul>
+          </div>
+          <div id="nav_box">
+            <ul id="nav">
+              <li><a href="../project_01_KYC/brandstory_page1.html">브랜드스토리</a></li>
+              <li><a href="./1.page1.html">이달의 한정 메뉴</a></li>
+              <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">그랜드메뉴</a></li>
+              <li><a href="../project_01_AHJ/web_project_1/sushiro_takeout.html">테이크아웃 · 배달</a></li>
+            </ul>
+            <div class="nav_hover">
+              <ul id="nav_hover_menu1" class="nav_hover_menu">
+                <li>
+                  <a href="../project_01_KYC/brandstory_page1.html" class="nav_hover_link">스시로 소개</a>
+                </li>
+                <li>
+                  <a href="../project_01_KYC/brandstory_page2.html" class="nav_hover_link">스시로 연혁</a>
+                </li>
+              </ul>
+              <ul id="nav_hover_menu2" class="nav_hover_menu">
+                <li><a href="./1.page1.html" class="nav_hover_link">초밥</a></li>
+                <li><a href="./1.page1.html" class="nav_hover_link">사이드</a></li>
+                <li><a href="./1.page1.html" class="nav_hover_link">디저트</a></li>
+              </ul>
+              <ul id="nav_hover_menu3" class="nav_hover_menu">
+                <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html" class="nav_hover_link">초밥</a></li>
+                <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html" class="nav_hover_link">음료</a></li>
+                <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html" class="nav_hover_link">사이드</a></li>
+                <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html" class="nav_hover_link">디저트</a></li>
+              </ul>
+              <ul id="nav_hover_menu4" class="nav_hover_menu">
+                <li><a href="#" class="nav_hover_link">가까운 매장 찾기</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="sns_nav_box">
+            <ul id="sns_nav">
+              <li><a href="https://www.instagram.com/sushiro_korea/" id="header_sns_insta" alt="insta">insta</a></li>
+              <li><a href="https://www.facebook.com/sushiro.kr" id="header_sns_facebook">facebook</a></li>
+              <li><a href="https://www.youtube.com/watch?v=PHeXvX-R2pA&feature=youtu.be" id="header_sns_youtube">youtube</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-            <img src ="./img/logo2.png" />
-        </div>
-</header>
+      </header>
 
 <nav>
     <div class="thumbnail">
-        <img src="https://sushiro.co.kr/theme/basic/images/sub_scroll_PC220531.jpg">
+        <div class="thumbnail_img"></div>
     </div>
 </nav>
+
 <section>
     <div class="screen1">
-        <div style="float:left; font-size: 30px; color: #FFB72B; margin-right: 900px;
-        margin-bottom: 20px;">이달의 한정 메뉴</div>
-        <div style="float:left; margin-bottom: 12px; font-size: 20px; color: white;">매달 나오는 새로운 메뉴를 스시로에서 즐겨보세요</div>
+        <div class="sc1font1">이달의 한정 메뉴</div>
+        <div class="sc1font2">매달 나오는 새로운 메뉴를 스시로에서 즐겨보세요</div>
         <hr style="border: solid 1px ; color: #FFB72B; width: 1200px;">
     </div>
 
@@ -61,7 +109,7 @@
         data-aos-duration="1000" >
     </div>
         
-        <div class="screen2-right" style="position: absolute; top:30%;">
+        <div class="screen2-right screen2-right-1">
             <div class="font1"data-aos="fade-up" data-aos-duration="500">Enjoy the sushi</div>
             <div class="font2" data-aos="fade-up" data-aos-duration="500">새로운 군함의 출격!</div>
             <div class="font2"data-aos="fade-up" data-aos-duration="500">고소한 낫또와 알싸하고 달콤한 타코 와사비를</div>
@@ -71,13 +119,13 @@
     </div>
 
     <div class="screen2" data-aos="fade-up" data-aos-duration="1000">
-        <div class="screen2-left"  style="position: absolute; top:30%;  left: 10%">
+        <div class="screen2-left screen2-left-1">
             <div class="font1"data-aos="fade-up" data-aos-duration="500">Enjoy the fresh</div>
             <div class="font2" data-aos="fade-up" data-aos-duration="500">소고기의 마블링을 연상케 하는 고소한 풍미</div>
             <div class="font2"data-aos="fade-up" data-aos-duration="500">탄력 있는 육질에 풍부한 지방층이 조화로운</div>
             <div class="font2" data-aos="fade-up" data-aos-duration="500">참치를 스시로에서 초밥으로 즐겨보세요</div>
         </div>
-        <div class="screen2-right" style="position: absolute; left: 40%">
+        <div class="screen2-right screen2-right-2">
             <img src="https://sushiro.co.kr/data/file/season/2039161806_D1L0G8wI_26117bb0988bd6fa542f122754528a06dab8b9b8.png"  data-aos="zoom-in"
             data-aos-duration="1000">
         </div>
@@ -88,7 +136,7 @@
             <img src="https://sushiro.co.kr/data/file/season/2039161806_coCG6yMg_80a792b4774028aba36f4c026c72978352781632.png"  data-aos="zoom-in"
             data-aos-duration="1000">
         </div>
-        <div class="screen2-right"  style="position: absolute; top:30%;">
+        <div class="screen2-right screen2-right-1">
             <div class="font1"data-aos="fade-up" data-aos-duration="500">Enjoy the tasty</div>
             <div class="font2" data-aos="fade-up" data-aos-duration="500">통통한 새우에 담긴 탱글한 속살과</div>
             <div class="font2"data-aos="fade-up" data-aos-duration="500">그속에 감춰진 고소한 감칠맛</div>
@@ -97,13 +145,13 @@
     </div>
     
     <div class="screen2" data-aos="fade-up" data-aos-duration="500">
-        <div class="screen2-left"  style="position: absolute; top:30%; left: 10%;">
+        <div class="screen2-left screen2-left-1">
             <div class="font1"data-aos="fade-up" data-aos-duration="500">Enjoy the life</div>
             <div class="font2" data-aos="fade-up" data-aos-duration="500">수십년 경력의 셰프가</div>
             <div class="font2"data-aos="fade-up" data-aos-duration="500">한알 한알 쥐어 만든 스시로</div>
             <div class="font2" data-aos="fade-up" data-aos-duration="500">행복한 한끼를 선물 해 드릴께요</div>
         </div>
-        <div class="screen2-right" style="position: absolute; left: 40%">
+        <div class="screen2-right screen2-right-2">
             <img src="https://sushiro.co.kr/data/file/season/2039161806_0P7NIElf_7b71eec4c4855dab26e54d29b943aa17adc73561.png"  data-aos="zoom-in"
             data-aos-duration="1000">
         </div>
@@ -117,12 +165,11 @@
 <!-------------------------------------전체메뉴------------------------------------------------>
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <!------------------------------page1-------------------------------------------------------------->
-        <div id="tab-1" class="tab-content current">
+        <div id="tabmenu1">
         <div class="tabarea">
             <div class="box">
                 <div class="tabimg">
-                <img src="https://sushiro.co.kr/data/file/menu/2039161806_ymgUMf04_0f96a9594cedf64f1fef30eb5e1279aa5e4be72b.png" style=" width: 310px;
-                height: 310px;">
+                <img src="https://sushiro.co.kr/data/file/menu/2039161806_ymgUMf04_0f96a9594cedf64f1fef30eb5e1279aa5e4be72b.png" class="img_size">
                 </div> 
                 <div class="tabtext">
                    <p class="name">하와이안 우삼겹</p>
@@ -131,8 +178,7 @@
                 </div>
         <div class="box">
             <div class="tabimg">
-                <img src="https://sushiro.co.kr/data/file/menu/2039161806_eOBjPFa2_175b76295efa51f3b4024fee422e2d2f4f764bcd.png" style=" width: 310px;
-                height: 310px;">
+                <img src="https://sushiro.co.kr/data/file/menu/2039161806_eOBjPFa2_175b76295efa51f3b4024fee422e2d2f4f764bcd.png" class="img_size">
                 </div>
                 <div class="tabtext">
                     <p class="name">우삼겹 참깨 소스 롤</p>
@@ -141,8 +187,7 @@
         </div>
         <div class="box">
             <div class="tabimg">
-                <img src="https://sushiro.co.kr/data/file/menu/2039161806_60u9ihkD_1d0494a0a08715187da6d9d7ff871c9db670c793.png" style=" width: 310px;
-                height: 310px;">
+                <img src="https://sushiro.co.kr/data/file/menu/2039161806_60u9ihkD_1d0494a0a08715187da6d9d7ff871c9db670c793.png" class="img_size">
             </div>
             <div class="tabtext">
                 <p class="name">우삼겹 양파 쌈</p>
@@ -151,8 +196,7 @@
         </div>
         <div class="box">
             <div class="tabimg">
-                <img src="https://sushiro.co.kr/data/file/menu/2039161806_tH8UnlYk_01578003aae2526944aa82b7cc9aaa8ffc370afd.png" style=" width: 310px;
-                height: 310px;">
+                <img src="https://sushiro.co.kr/data/file/menu/2039161806_tH8UnlYk_01578003aae2526944aa82b7cc9aaa8ffc370afd.png" class="img_size">
             </div>
             <div class="tabtext">
                 <p class="name">로스트 비프</p>
@@ -164,8 +208,7 @@
     <div class="tabarea">
         <div class="box">
             <div class="tabimg">
-            <img src="https://sushiro.co.kr/data/file/menu/2039161806_h8u4021Y_174e373521195b643796cd70456bbb4ce1a052fa.png" style=" width: 310px;
-            height: 310px;">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_h8u4021Y_174e373521195b643796cd70456bbb4ce1a052fa.png" class="img_size">
             </div> 
             <div class="tabtext">
                <p class="name">고기 고기 소고기</p>
@@ -174,8 +217,7 @@
             </div>
     <div class="box">
         <div class="tabimg">
-            <img src="https://sushiro.co.kr/data/file/menu/2039161806_bXnigwDy_4bbbb960b95371d57f843bd8d05c273b349f9a4c.png" style=" width: 310px;
-            height: 310px;">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_bXnigwDy_4bbbb960b95371d57f843bd8d05c273b349f9a4c.png" class="img_size">
             </div>
             <div class="tabtext">
                 <p class="name">남해 전갱이 아부리</p>
@@ -184,8 +226,7 @@
     </div>
     <div class="box">
         <div class="tabimg">
-            <img src="https://sushiro.co.kr/data/file/menu/2039161806_uWzyGr5U_34a46c71d4a695db2b88cc50979f95a3778f2d14.png" style=" width: 310px;
-            height: 310px;">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_uWzyGr5U_34a46c71d4a695db2b88cc50979f95a3778f2d14.png" class="img_size">
         </div>
         <div class="tabtext">
             <p class="name">생강 전갱이 아부리</p>
@@ -194,8 +235,7 @@
     </div>
     <div class="box">
         <div class="tabimg">
-            <img src="https://sushiro.co.kr/data/file/menu/2039161806_eKVORzvN_457b948e712d6bc70ea3a6eec31858dc71110d41.png" style=" width: 310px;
-            height: 310px;">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_eKVORzvN_457b948e712d6bc70ea3a6eec31858dc71110d41.png" class="img_size">
         </div>
         <div class="tabtext">
             <p class="name">통영 삼치 아부리</p>
@@ -203,15 +243,24 @@
         </div>
     </div>
 </div><!--tabarea-->
-</div><!--page1 end-->
+
+<!-------------------------------------------page_button-------------------------------------------------->
+<div class="tabs">
+    <a href="javascript:tab1()">1</a>
+    <a href="javascript:tab2()">2</a>
+    <a href="javascript:tab3()">3</a>
+    <a href="javascript:tab3()">></a>
+</div>
+<!-------------------------------------------page_button_End--------------------------------------------------------->
+</div>
+<!----------------------------------------page1 end---------------------------------------------------->
 
 <!---------------------------------------page2 start---------------------------------------------->
-<div id="tab-2" class="tab-content">
+<div id="tabmenu2">
 <div class="tabarea">
     <div class="box">
         <div class="tabimg">
-        <img src="https://sushiro.co.kr/data/file/menu/2039161806_sXlgRZKB_a4df7f631bd6bc5ea29f1a4bd8048c88c64e283a.png" style=" width: 310px;
-        height: 310px;">
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_sXlgRZKB_a4df7f631bd6bc5ea29f1a4bd8048c88c64e283a.png" class="img_size">
         </div> 
         <div class="tabtext">
            <p class="name">통영 학꽁치 튀김 초밥</p>
@@ -220,8 +269,7 @@
         </div>
 <div class="box">
     <div class="tabimg">
-        <img src="https://sushiro.co.kr/data/file/menu/2039161806_PNoZVqk9_3c41b25dec204c743dd7dc0d33d47e1d0ea79de6.png" style=" width: 310px;
-        height: 310px;">
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_PNoZVqk9_3c41b25dec204c743dd7dc0d33d47e1d0ea79de6.png" class="img_size">
         </div>
         <div class="tabtext">
             <p class="name">아구간 아부리</p>
@@ -230,31 +278,28 @@
 </div>
 <div class="box">
     <div class="tabimg">
-        <img src="https://sushiro.co.kr/data/file/menu/2039161806_51iUrgpP_4457e7a26b215a647b7eb8d9955c5c367a1370ea.png" style=" width: 310px;
-        height: 310px;">
-    </div>
-    <div class="tabtext">
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_51iUrgpP_4457e7a26b215a647b7eb8d9955c5c367a1370ea.png" class="img_size">
+        </div>
+        <div class="tabtext">
         <p class="name">아구간 군함</p>
         <p class="price">2900 원</p>
     </div>
 </div>
 <div class="box">
     <div class="tabimg">
-        <img src="https://sushiro.co.kr/data/file/menu/2039161806_MdvYE4JZ_4ee4101497640295f896457d8c19058eda134120.png" style=" width: 310px;
-        height: 310px;">
-    </div>
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_MdvYE4JZ_4ee4101497640295f896457d8c19058eda134120.png" class="img_size">
+      </div>
     <div class="tabtext">
         <p class="name">오징어 듀오</p>
         <p class="price">2900 원</p>
+    </div>
 </div> 
 
-</div>
 </div><!--tabarea-->
 <div class="tabarea">
 <div class="box">
     <div class="tabimg">
-    <img src="https://sushiro.co.kr/data/file/menu/2039161806_M5jDtnJ2_f7cff71696d74d0465523eab9a742fb48556bf5f.png" style=" width: 310px;
-    height: 310px;">
+    <img src="https://sushiro.co.kr/data/file/menu/2039161806_M5jDtnJ2_f7cff71696d74d0465523eab9a742fb48556bf5f.png" class="img_size">
     </div> 
     <div class="tabtext">
        <p class="name">서천 주꾸미</p>
@@ -263,8 +308,7 @@
     </div>
 <div class="box">
 <div class="tabimg">
-    <img src="https://sushiro.co.kr/data/file/menu/2039161806_YdMsSglo_85383940f91a67e20b99b2761e6f73b3dbef7a8b.png" style=" width: 310px;
-    height: 310px;">
+    <img src="https://sushiro.co.kr/data/file/menu/2039161806_YdMsSglo_85383940f91a67e20b99b2761e6f73b3dbef7a8b.png" class="img_size">
     </div>
     <div class="tabtext">
         <p class="name">단짠 주꾸미</p>
@@ -273,8 +317,7 @@
 </div>
 <div class="box">
 <div class="tabimg">
-    <img src="https://sushiro.co.kr/data/file/menu/2039161806_hPAW93su_954dbcf60737c882f2cac8e61e259de1f7082ddc.png" style=" width: 310px;
-    height: 310px;">
+    <img src="https://sushiro.co.kr/data/file/menu/2039161806_hPAW93su_954dbcf60737c882f2cac8e61e259de1f7082ddc.png" class="img_size">
 </div>
 <div class="tabtext">
     <p class="name">치즈 마요 주꾸미</p>
@@ -283,8 +326,7 @@
 </div>
 <div class="box">
 <div class="tabimg">
-    <img src="https://sushiro.co.kr/data/file/menu/2039161806_bRfBtQs2_a18c1067a9befdeb8db6e06d894793ffbefc55a3.png" style=" width: 310px;
-    height: 310px;">
+    <img src="https://sushiro.co.kr/data/file/menu/2039161806_bRfBtQs2_a18c1067a9befdeb8db6e06d894793ffbefc55a3.png" class="img_size">
 </div>
 <div class="tabtext">
     <p class="name">스파이시 주꾸미 군함</p>
@@ -292,42 +334,208 @@
 </div>
 </div>
 </div><!--tabarea-->
+<div class="tabs">
+    <a href="javascript:tab1()">1</a>
+    <a href="javascript:tab2()">2</a>
+    <a href="javascript:tab3()">3</a>
+    <a href="javascript:tab3()">></a>
+</div>
 </div><!--page2 end-->
  <!-----------------------------------------page2 end------------------------------------------------------------>
- <!-------------------------------------------page_button-------------------------------------------------->
- <ul class="tabs">
-     <li class="tab-link current" data-tab="tab-1">1</li>
-     <li class="tab-link" data-tab="tab-2">2</li>
-     <li class="tab-link" data-tab="tab-3">3</li>
-     <li>></li>
- </ul>
- <!-------------------------------------------page_button_End--------------------------------------------------------->
+ <!---------------------------------------page3 start---------------------------------------------->
+<div id="tabmenu3">
+    <div class="tabarea">
+        <div class="box">
+            <div class="tabimg">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_KvU3tRLm_9ac655ca5bab0a55e91095aa65b6e8b376b511c5.png" class="img_size">
+            </div> 
+            <div class="tabtext">
+               <p class="name">남방 참다랑어 속살</p>
+               <p class="price">2900 원</p>
+            </div>
+            </div>
+    <div class="box">
+        <div class="tabimg">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_L3TaeKPF_14f9f62f5a89c40bacd432afee14d6b191003dd2.png" class="img_size">
+            </div>
+            <div class="tabtext">
+                <p class="name">남방 참다랑어 중뱃살</p>
+                <p class="price">1900 원</p>
+            </div>
+    </div>
+    <div class="box">
+        <div class="tabimg">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_lXFugOf4_be96391575256fc3c9765dd83ea56f97609c8a0d.png" class="img_size">
+        </div>
+        <div class="tabtext">
+            <p class="name">통영 순살 아구 꼬치</p>
+            <p class="price">2900 원</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="tabimg">
+            <img src="https://sushiro.co.kr/data/file/menu/2039161806_YNwzxGQy_a73369654857324b27b46f45e3918c6b3e172091.png" class="img_size">
+        </div>
+        <div class="tabtext">
+            <p class="name">명란마요 타코야끼 꼬치</p>
+            <p class="price">1900 원</p>
+    </div> 
+    
+    </div>
+    </div><!--tabarea-->
+    <div class="tabarea">
+    <div class="box">
+        <div class="tabimg">
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_X4pOYiWw_687e4fc409c33b75da4b67f9ecf2566eb97591b2.png" class="img_size">
+        </div> 
+        <div class="tabtext">
+           <p class="name">여름 튀김</p>
+           <p class="price">4600 원</p>
+        </div>
+        </div>
+    <div class="box">
+    <div class="tabimg">
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_I85eoQ39_c544ecb1363ca235657ba74649a3ade4a5321390.png" class="img_size">
+        </div>
+        <div class="tabtext">
+            <p class="name">아구간 해초 샐러드</p>
+            <p class="price">4600 원</p>
+        </div>
+    </div>
+    <div class="box">
+    <div class="tabimg">
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_wK5Hu6OR_d83ea37fcd0810cef82fc598805a0380390c4542.png" class="img_size">
+    </div>
+    <div class="tabtext">
+        <p class="name">소고기 양패 샐러드</p>
+        <p class="price">4600 원</p>
+    </div>
+    </div>
+    <div class="box">
+    <div class="tabimg">
+        <img src="https://sushiro.co.kr/data/file/menu/2039161806_ZEt5BNqK_5381c5f4f64cf0687073590af7ba9ac79b7206a5.png" class="img_size">
+    </div>
+    <div class="tabtext">
+        <p class="name">스시로 냉소바</p>
+        <p class="price">3900 원</p>
+    </div>
+    </div>
+    </div><!--tabarea-->
+    <div class="tabs">
+        <a href="javascript:tab1()">1</a>
+        <a href="javascript:tab2()">2</a>
+        <a href="javascript:tab3()">3</a>
+        <a href="javascript:tab3()">></a>
+    </div>
+    </div><!--page3 end-->
+     <!-----------------------------------------page3 end------------------------------------------------------------>
+
+ 
     </div><!--tabbox-->
     
 </section>
 
-<footer>
-    <div class="footer_menu">
-        <div class="footer_menufont">브랜드 소개</div>
-        <div class="footer_menufont">이달의 한정메뉴</div>
-        <div class="footer_menufont">그랜드 메뉴</div>
-        <div class="footer_menufont">테이크아웃ㆍ배달</div>
-        <div class="footer_sns" style="margin-left: 4%;"><img src="./img/insta.png" style="width: 40px; height: 40px;"></div>
-        <div class="footer_sns"><img src="./img/faceb.png" style="width: 40px; height: 40px;"></div>
-        <div class="footer_sns"><img src="./img/youtu.png" style="width: 40px; height: 40px;"></div>
-        </div>
-    <div>
-        <div class="footer_menubox"></div>
-        <div class="footer_menubox"></div>
-        <div class="footer_menubox"></div>
-        <div class="footer_menubox"></div>
+<footer id="footer">
+    <div id="footer_head">
+      <div class="inner">
+        <ul class="footer_nav">
+          <li>브랜드스토리</li>
+          <li>이달의 한정메뉴</li>
+          <li>그랜드메뉴</li>
+          <li>테이크아웃 · 배달</li>
+        </ul>
+        <ul class="footer_sns">
+          <li>
+            <a
+              href="https://www.instagram.com/sushiro_korea/"
+              id="footer_sns_instagram"
+              >인스타그램</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sushiro.kr"
+              id="footer_sns_facebook"
+              >페이스북</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=PHeXvX-R2pA&feature=youtu.be"
+              id="footer_sns_youtube"
+              >유튜브</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-    
-    
-</footer>
+    <div id="footer_bottom">
+      <div class="inner">
+        <div id="footer_mini_nav">
+          <ul class="footer_mini_nav1">
+            <li>
+              <a href="../project_01_KYC/brandstory_page1.html"
+                >스시로 소개</a
+              >
+            </li>
+            <li>
+              <a href="../project_01_KYC/brandstory_page2.html"
+                >스시로 연혁</a
+              >
+            </li>
+          </ul>
+          <ul class="footer_mini_nav2">
+            <li>
+              <a
+                href="./1.page1.html"
+                >초밥</a
+              >
+            </li>
+            <li>
+              <a
+                href="./1.page1.html"
+                >사이드</a
+              >
+            </li>
+            <li>
+              <a
+                href="./1.page1.html"
+                >디저트</a
+              >
+            </li>
+          </ul>
+          <ul class="footer_mini_nav3">
+            <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">초밥</a></li>
+            <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">음료</a></li>
+            <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">사이드</a></li>
+            <li><a href="../project_01_AHJ/web_project_1/sushiro_grandmenu/sushiro_grandmenu.html">디저트</a></li>
+          </ul>
+          <ul class="footer_mini_nav4">
+            <li><a href="#">가까운 매장 찾기</a></li>
+          </ul>
+        </div>
+        <div id="footer_bottom_text">
+          <ul>
+            <li>대표이사: 최장규</li>
+            <li>사업자 등록번호: 214-88-75700</li>
+            <li>본사. 서울시 마포구 새창로 11, 공덕빌딩18층</li>
+            <li>TEL. 1544-1544</li>
+            <li>FAX. 070-1533-1533</li>
+          </ul>
+          <div id="footer_bottom_end">
+            <div class="footer_bottom_logo"></div>
+            <p>창업문의 1588-1588</p>
+            <p>COPYRIGHT ⓒ 2021 SUSHIRO ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 <script>
     AOS.init();
 </script>
-<script type="text/javascript" src ="index.js"></script>
+
 </body>
+<script src="./index.js"></script>
+<script src="../project_01_KYC/brandstory_js/brandstory1.js"></script>
 </html>
