@@ -45,7 +45,12 @@
   right: 70px;
   z-index: 10;
 }
-
+.inner {
+  position: relative;
+  max-width: 1440px;
+  min-width: 400px;
+  margin: 0 auto;
+}
 #menu_icon {
   display: none;
   position: absolute;
