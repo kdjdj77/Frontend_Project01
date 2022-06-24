@@ -10,6 +10,13 @@
   z-index: 10;
 }
 
+.inner {
+  position: relative;
+  max-width: 1440px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
 #header > .inner {
   position: relative;
 }
