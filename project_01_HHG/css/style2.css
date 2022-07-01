@@ -1,21 +1,8 @@
-@font-face {
-    src: url("./font/Nanum_Gothic/NanumGothic-Bold.ttf");
-    src: url("./font/Nanum_Gothic/NanumGothic-ExtraBold.ttf");
-    src: url("./font/Nanum_Gothic/NanumGothic-Regular.ttf");
-    font-family: "Nanum_Gothic";
-}
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-#header {font-family: "Nanum_Gothic";}
-#footer {font-family: "Nanum_Gothic";}
-
-section {
     font-family: 'PT Sans Narrow', sans-serif;
     font-family: 'Rajdhani', sans-serif;
 }
