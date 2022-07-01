@@ -1,5 +1,10 @@
 /*header*/
-
+@font-face {
+  src: url("../font/Nanum_Gothic/NanumGothic-Bold.ttf");
+  src: url("../font/Nanum_Gothic/NanumGothic-ExtraBold.ttf");
+  src: url("../font/Nanum_Gothic/NanumGothic-Regular.ttf");
+  font-family: "Nanum_Gothic";
+}
 #header {
   width: 100%;
   height: 50px;
@@ -7,6 +12,7 @@
   top: 0;
   background-color: #ffb319;
   border-bottom: 1px solid black;
+  font-family: "Nanum_Gothic";
   z-index: 10;
 }
 

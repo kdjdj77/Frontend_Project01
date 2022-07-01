@@ -60,10 +60,9 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-size: 17px;
-  font-family: "Spoqa Han Sans Neo";
 }
 
 .active a {
@@ -205,8 +204,9 @@ footer hr {
 }
 
 .events {
-  height: 1330px;
+  height: auto;
   background-color: #000;
+  font-family: "Spoqa Han Sans Neo";
   width: 100%;
 }
 
