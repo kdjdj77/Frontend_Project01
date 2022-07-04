@@ -6,9 +6,7 @@
 }
 
 html{
-    font-family: 'Nanum Gothic Coding', monospace;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Rajdhani', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 ul,
@@ -18,7 +16,7 @@ li {
 
 body{
     background: url(https://sushiro.co.kr/theme/basic/images/svis-bg.jpg) repeat;
-    font-family: 'PT Sans Narrow', sans-serif;
+    
 }
 
 nav{
@@ -201,10 +199,6 @@ div, ul, li{
     .screen2-right{
         margin-left: 100px;
     }
-    
-    .tabs{
-        margin-left: 5%;
-    }
 
     .box > div > img{
         width: 200px;
@@ -214,7 +208,6 @@ div, ul, li{
     
     
     .tabtext{
-
         width: 200px;
     }
     
@@ -257,9 +250,6 @@ div, ul, li{
             display: contents;
         }
         
-        .tabs{
-            margin-left: 4%;
-        }
 
         .tabarea {
             display: flex;
