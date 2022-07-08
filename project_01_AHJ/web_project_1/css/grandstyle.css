@@ -160,10 +160,11 @@
 .tabbox {
   position: relative;
   margin: auto;
+  padding-left:40%;
+  padding-right:40%;
   text-align: center;
   width:100%;
-  margin-left: 43%;
-  margin-right: 43%;
+  font-size:1.5rem;
 }
 
 .tabbox a {
