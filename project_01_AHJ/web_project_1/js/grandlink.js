@@ -3,28 +3,28 @@ const menubox2 = document.getElementById("menubox2");
 const menubox3 = document.getElementById("menubox3");
 const menubox4 = document.getElementById("menubox4");
 function menu1() {
-  menubox1.style.display = "block";
+  menubox1.style.display = "flex";
   menubox2.style.display = "none";
   menubox3.style.display = "none";
   menubox4.style.display = "none";
 }
 function menu2() {
   menubox1.style.display = "none";
-  menubox2.style.display = "block";
+  menubox2.style.display = "flex";
   menubox3.style.display = "none";
   menubox4.style.display = "none";
 }
 function menu3() {
   menubox1.style.display = "none";
   menubox2.style.display = "none";
-  menubox3.style.display = "block";
+  menubox3.style.display = "flex";
   menubox4.style.display = "none";
 }
 function menu4() {
   menubox1.style.display = "none";
   menubox2.style.display = "none";
   menubox3.style.display = "none";
-  menubox4.style.display = "block";
+  menubox4.style.display = "flex";
 }
 const eventbox1 = document.getElementById("eventbox1");
 const eventbox2 = document.getElementById("eventbox2");
