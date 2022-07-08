@@ -29,11 +29,22 @@
   display: flex;
   justify-content: center;
 }
+
+#button_wrapper {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:0 auto;
+  /*
+  padding-left:calc(50vw - 500px);
+  padding-right:calc(50vw - 500px);
+  */
+}
+
 #button_wrapper .buttonimg {
   display: inline-block;
   width: 185px;
   height: 185px;
-  margin-left: 10%;
   position: relative;
   background-color: #ffb72b;
 }
@@ -46,7 +57,10 @@
 .inner_button {
   display: inline-block;
   width: 185px;
-  margin-left: 10%;
+
+  margin-left: 2%;
+  margin-right:2%;
+
   position: relative;
 }
 
@@ -57,7 +71,6 @@
   margin: auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 10%;
   position: relative;
 }
 
@@ -67,7 +80,7 @@
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  margin-left: 46%;
+  margin-left: 36%;
   text-align: center;
 }
 
@@ -91,7 +104,13 @@
 .grandmenu_box {
   width: 100%;
   height: auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
   background-color: #000;
+
+  padding-left:calc(50vw - 700px);
+  padding-right:calc(50vw - 700px);
 }
 
 #menubox2,
@@ -112,7 +131,8 @@
   position: relative;
   margin-bottom: 5px;
   margin-top: 5px;
-  margin-left: 5%;
+  margin-right:2%;
+  margin-left:2%;
   display: inline-block;
   text-align: center;
 }
@@ -145,6 +165,7 @@
   position: relative;
   margin: auto;
   text-align: center;
+  width:100%;
   margin-left: 43%;
   margin-right: 43%;
 }
@@ -152,4 +173,16 @@
 .tabbox a {
   color: #ffffff;
   margin-right: 5%;
+}
+
+@media (max-width: 900px) and (min-width:600px) {
+  #button_wrapper {
+    padding-right:15%;
+    padding-left:15%;
+  }
+}
+@media (max-width: 600px) {
+  #button_wrapper {
+    padding:0 auto;
+  }
 }
