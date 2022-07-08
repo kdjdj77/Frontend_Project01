@@ -35,10 +35,6 @@
   flex-wrap:wrap;
   justify-content:center;
   padding:0 auto;
-  /*
-  padding-left:calc(50vw - 500px);
-  padding-right:calc(50vw - 500px);
-  */
 }
 
 #button_wrapper .buttonimg {
