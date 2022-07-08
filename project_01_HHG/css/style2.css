@@ -31,16 +31,23 @@ nav .thumbnail{
     height: 100%;
     
 }
-
+/*
 .thumbnail_img{
     background: url(../img/thumbnail.jpg) no-repeat;
-    background-size: 100% 100%;
     margin: 0 auto;
-    width: 1400px;
-    height: 560px;
+    width: 1440px;
+    height: 900px;
+}
+*/
+.thumbnail_img{
+    background: url(../img/thumbnail.jpg) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 90vw;
+    height: 70vh;
 }
 
- .screen1{
+.screen1{
     width: 80%;
     margin: 100px auto;
     position: relative;
