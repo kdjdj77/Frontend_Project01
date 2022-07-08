@@ -4,6 +4,7 @@
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
+  word-break:keep-all;
 }
 
 #high_text_content {
@@ -82,17 +83,15 @@
 #content3_text_as {
   color: #ffffff;
   font-size: 12px;
+  max-width:800px;
   margin-top: 20px;
-  margin-left: 70px;
+  margin-left: 10% auto;
 }
 
 #content3_text_as li {
   margin-bottom: 5px;
-}
-
-#content3_text_as li::before {
-  content: "-";
-  margin-right: 5px;
+  text-align:left;
+  list-style:"-"
 }
 
 .img4 {
