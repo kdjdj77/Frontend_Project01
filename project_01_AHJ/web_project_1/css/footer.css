@@ -1,6 +1,12 @@
 /*footer*/
-
+@font-face {
+  src: url("../font/Nanum_Gothic/NanumGothic-Bold.ttf");
+  src: url("../font/Nanum_Gothic/NanumGothic-ExtraBold.ttf");
+  src: url("../font/Nanum_Gothic/NanumGothic-Regular.ttf");
+  font-family: "Nanum_Gothic";
+}
 #footer {
+  font-family: "Nanum_Gothic";
   width: 100%;
   background-color: #ffb319;
 }
@@ -35,6 +41,7 @@
   display: inline-block;
   text-align: center;
   position: relative;
+  color:black;
 }
 
 .footer_nav li:after {
