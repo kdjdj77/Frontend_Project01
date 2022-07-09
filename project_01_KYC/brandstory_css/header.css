@@ -10,6 +10,10 @@
   z-index: 10;
 }
 
+#side_menu {
+  font-size:13px;
+}
+
 .inner {
   position: relative;
   max-width: 1440px;
@@ -192,14 +196,14 @@
 #header_sns_insta {
   width: 36px;
   height: 36px;
-  background: url(../img/foot-sns1.png) no-repeat;
+  background: url(../img/foot-sns3.png) no-repeat;
   background-size: 100% 100%;
 }
 
 #header_sns_facebook {
   width: 36px;
   height: 36px;
-  background: url(../img/foot-sns3.png) no-repeat;
+  background: url(../img/foot-sns1.png) no-repeat;
   background-size: 100% 100%;
 }
 

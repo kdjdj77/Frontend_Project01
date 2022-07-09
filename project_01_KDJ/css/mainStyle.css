@@ -389,7 +389,7 @@ ul.imgs li{
    padding-top:100px; 
    height:5%; 
    width:100%; 
-   background-color:#f47c7c;
+   background-color:#ef9f9f;
    display:flex;
    justify-content:space-between;
 }
@@ -444,13 +444,13 @@ ul.imgs li{
    line-height:3rem;
    text-align:left;
    word-break:keep-all;
-   background-color:#8cc0de;
+   background-color:#f47c7c;
    color:black;
 }
 #footerFooter #footerLogo {
    width:50%;
    height:100%;
-   background-color:#8cc0de;
+   background-color:#f47c7c;
    font-size:3rem;
    color:black;
    position:relative;
